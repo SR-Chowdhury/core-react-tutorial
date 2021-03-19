@@ -1,0 +1,50 @@
+.Container {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.Bio, .Skills, .Links {
+    margin-bottom: 30px;
+}
+
+.Bio h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Bio p {
+    font-size: 13px;
+    color: #222222;
+    margin-top: 5px;
+}
+
+.Skills h3, .Links h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Skills ul, .Links ul {
+    list-style-type: none;
+}
+
+.Skills ul li, .Links ul li {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 20px;
+    background: #efefef;
+    border-radius: 5px;
+}
+
+.Links ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #02075d;
+}
+
+.Links ul li a:hover {
+    color: #ffa500;
+}
