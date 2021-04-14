@@ -7,7 +7,8 @@ import React from 'react';
 // import MyApp from '../L4/4.9_reuse_component';
 // import MyApp from '../L4/4.10 Props/4.10_props_react';
 // import MyApp from '../L4/4.11 Modify Profile/index';
-import MyApp from '../L4/4.12_pass_func';
+// import MyApp from '../L4/4.12_pass_func';
+import MyApp from '../L4/4.13_render_child_component';
 
 class App extends React.Component {
 
