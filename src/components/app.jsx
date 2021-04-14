@@ -10,7 +10,8 @@ import React from 'react';
 // import MyApp from '../L4/4.12_pass_func';
 // import MyApp from '../L4/4.13_render_child_component';
 // import MyApp from '../L5/5.2_state_p1';
-import MyApp from '../L5/5.3_state_p2';
+// import MyApp from '../L5/5.3_state_p2';
+import MyApp from '../L5/5.4_update_setState';
 
 class App extends React.Component {
 
