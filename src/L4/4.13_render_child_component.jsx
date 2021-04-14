@@ -23,4 +23,13 @@ const ChildComponent = props => (
         {props.children}
     </div>
 )
+// OR
+// const ChildComponent = props => {
+//     return (
+//         <div>
+//             <h1>I am Child</h1>
+//             {props.children}
+//         </div>
+//     )
+// }
 export default MyApp;
