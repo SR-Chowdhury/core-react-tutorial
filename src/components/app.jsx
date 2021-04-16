@@ -13,7 +13,8 @@ import React from 'react';
 // import MyApp from '../L5/5.3_state_p2';
 // import MyApp from '../L5/5.4_update_setState';
 // import MyApp from '../L5/5.5 Simple Timer/5.5_simple_timer';
-import MyApp from '../L6/6.3_inline_css';
+// import MyApp from '../L6/6.3_inline_css';
+import MyApp from '../L6/6.4 CSS Style/6.4_css_class';
 
 class App extends React.Component {
 
