@@ -16,6 +16,7 @@ import React from 'react';
 // import MyApp from '../L6/6.3_inline_css';
 // import MyApp from '../L6/6.4 CSS Style/6.4_css_class';
 import MyApp from '../L6/6.5 CSS Module/css_module';
+// import MyApp from '../L6/6.6 JSS [Styled Component]/p1';
 
 class App extends React.Component {
 
