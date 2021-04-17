@@ -17,7 +17,8 @@ import React from 'react';
 // import MyApp from '../L6/6.4 CSS Style/6.4_css_class';
 // import MyApp from '../L6/6.5 CSS Module/css_module';
 // import MyApp from '../L6/6.6 JSS [Styled Component]/p1';
-import MyApp from '../L7/7.3_event_handler';
+// import MyApp from '../L7/7.3_event_handler';
+import MyApp from '../L7/7.4_text_field_change_event';
 
 class App extends React.Component {
 
