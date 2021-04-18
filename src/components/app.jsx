@@ -19,7 +19,8 @@ import React from 'react';
 // import MyApp from '../L6/6.6 JSS [Styled Component]/p1';
 // import MyApp from '../L7/7.3_event_handler';
 // import MyApp from '../L7/7.4_text_field_change_event';
-import MyApp from '../L7/7.5_two_way_data_binding';
+// import MyApp from '../L7/7.5_two_way_data_binding';
+import MyApp from '../L7/7.6_onBlur_onFocus';
 
 class App extends React.Component {
 
