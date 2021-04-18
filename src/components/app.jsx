@@ -21,7 +21,8 @@ import React from 'react';
 // import MyApp from '../L7/7.4_text_field_change_event';
 // import MyApp from '../L7/7.5_two_way_data_binding';
 // import MyApp from '../L7/7.6_onBlur_onFocus';
-import MyApp from '../L8/8.2_Basic_input_elements';
+// import MyApp from '../L8/8.2_Basic_input_elements';
+import MyApp from '../L8/8.3_BIO_radio_checkbox';
 
 class App extends React.Component {
 
