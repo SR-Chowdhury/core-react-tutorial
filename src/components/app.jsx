@@ -24,7 +24,8 @@ import React from 'react';
 // import MyApp from '../L8/8.2_Basic_input_elements';
 // import MyApp from '../L8/8.3_BIO_radio_checkbox';
 // import MyApp from '../L8/8.4._checkbox_array';
-import MyApp from '../L8/8.5_uncontrolled_form_react';
+// import MyApp from '../L8/8.5_uncontrolled_form_react';
+import MyApp from '../L8/8.6_controlled_form';
 
 class App extends React.Component {
 
