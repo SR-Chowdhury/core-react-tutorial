@@ -25,13 +25,16 @@ import React from 'react';
 // import MyApp from '../L8/8.3_BIO_radio_checkbox';
 // import MyApp from '../L8/8.4._checkbox_array';
 // import MyApp from '../L8/8.5_uncontrolled_form_react';
-import MyApp from '../L8/8.6_controlled_form';
+// import MyApp from '../L8/8.6_controlled_form';
+import MyApp from '../L8/8.8_Form/react_form';
 
 class App extends React.Component {
 
     render() {
 
-        return <MyApp/>
+        return (
+            <MyApp/>
+        );
         
     }
 }

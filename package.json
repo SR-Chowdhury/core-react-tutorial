@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "prop-types": "^15.7.2",
     "styled-components": "^5.2.3"
   }
 }
