@@ -13,7 +13,8 @@ class MyApp extends React.Component {
 
     state = {
         values: initValues,
-        agreement: false
+        agreement: false,
+        errors: {}
     }
 
     handleChange = event => {
@@ -31,12 +32,43 @@ class MyApp extends React.Component {
         });
     }
 
+    validateForm = () => {
+
+        const errors = {};
+        const {values: {name,email,password,birthDate,gender}} = this.state;
+        
+        if(!name) {
+            errors.name = 'Please Enter Name';
+        } else if (name.length < 5 ) {
+            errors.name = 'Name length should be more than 5 letters';
+        } else if (name.length > 35 ) {
+            errors.name = 'Name length should not be more than 35 letters';
+        }
+        if(!email) {errors.email = 'Please Enter email';}
+        if(!password) {errors.password = 'Please Enter password';}
+        if(!birthDate) {errors.birthDate = 'Please Select Birthdate';}
+        if(!gender) {errors.gender = 'Please Select Gender';}
+
+        return {
+            errors,
+            isValid: Object.keys(errors).length === 0
+        }
+    }
+
     handleSubmit = event => {
         event.preventDefault();
-        console.log(this.state.values, this.state.agreement);
+        const {errors, isValid} = this.validateForm();
 
-        event.target.reset();
-        this.setState({values: initValues, agreement: false});
+        if(isValid) {
+            console.log(this.state.values, this.state.agreement);
+
+            event.target.reset();
+            this.setState({ values: initValues, agreement: false, errors: {} });
+        } 
+        else {
+            this.setState({ errors });
+        }
+
     }
 
     render() {
@@ -49,7 +81,8 @@ class MyApp extends React.Component {
                     values = {this.state.values}
                     handleChange = {this.handleChange}
                     agreement = {this.state.agreement}
-                    handleCheckBox = {this.handleCheckBox}
+                    errors = {this.state.errors}
+                    handleCheckBox = {this.handleCheckBox}                    
                     handleSubmit = {this.handleSubmit}
                 />
 

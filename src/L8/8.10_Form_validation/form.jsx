@@ -15,6 +15,7 @@ const Form = props => {
                     value = {props.values.name}
                     placeholder = 'Enter you name'
                     onChange = {props.handleChange}
+                    error = {props.errors.name}
                 />                    
                 <TextInput
                     label = 'Enter email'
@@ -23,6 +24,7 @@ const Form = props => {
                     value = {props.values.email}
                     placeholder = 'Enter you email'
                     onChange = {props.handleChange}
+                    error = {props.errors.email}
                 />                        
                 <TextInput
                     label = 'Enter password'
@@ -31,6 +33,7 @@ const Form = props => {
                     value = {props.values.password}
                     placeholder = '*************'
                     onChange = {props.handleChange}
+                    error = {props.errors.password}
                 />                       
                 <TextInput
                     label = 'Slelect Birthdate'
@@ -38,6 +41,7 @@ const Form = props => {
                     name = 'birthDate'
                     value = {props.values.birthDate}
                     onChange = {props.handleChange}
+                    error = {props.errors.birthDate}
                 /> 
                 <div className='form-group'>
                     <label className='mr-3'>
@@ -63,7 +67,8 @@ const Form = props => {
                             value = 'other'
                             onChange = {props.handleChange}
                         /><span className='pl-2'>Other</span> 
-                    </label> 
+                    </label>
+                    {/* { props.errors.gender && <div className="invalid-feedback">{props.errors.gender}</div>}  */}
                 </div> 
                 <div className="form-group">
                     <input 
@@ -72,7 +77,7 @@ const Form = props => {
                         checked = {props.agreement}
                         onChange = {props.handleCheckBox}
                     /> I agree all the terms and conditions.   
-                </div> <br/>
+                </div>
 
                 <button className='btn btn-success' disabled = {!props.agreement}>Sign Up</button> 
 
@@ -86,6 +91,7 @@ const Form = props => {
 Form.propTypes = {
     values: PropTypes.object.isRequired,
     agreement: PropTypes.bool.isRequired,
+    errors: PropTypes.object.isRequired,
     handleChange: PropTypes.func.isRequired,
     handleCheckBox: PropTypes.func.isRequired,
     handleSubmit: PropTypes.func.isRequired
