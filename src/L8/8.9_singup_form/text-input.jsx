@@ -29,7 +29,6 @@ TextInput.propTypes = {
 TextInput.defaultProps = {
     label: '',
     type: 'text',
-    placeholder: ''
 }
 
 export default TextInput;
