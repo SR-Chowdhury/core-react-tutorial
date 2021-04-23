@@ -27,7 +27,8 @@ import React from 'react';
 // import MyApp from '../L8/8.5_uncontrolled_form_react';
 // import MyApp from '../L8/8.6_controlled_form';
 // import MyApp from '../L8/8.8_Form/index';
-import MyApp from '../L8/8.9_singup_form/index';
+// import MyApp from '../L8/8.9_singup_form/index';
+import MyApp from '../L8/8.10_Form_validation/index';
 
 class App extends React.Component {
 
